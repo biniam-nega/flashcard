@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flashcards</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../w3/w3.css"/>
+        <link rel="stylesheet" href="css/main.css"/>
+        <script src="../jQuery/jquery-3.5.1.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <div class="w3-bar w3-top w3-pink">
+            <h1 class="w3-wide w3-bar-item" id="logo">FLASHCARD </h1>
+            <input type="button" class="w3-bar-item w3-right w3-button w3-pink w3-xxxlarge w3-hover-shadow w3-hover-pink" value="&plus;" id="add-flash-btn"/>
+        </div>
+
+        <div id="my-cards" class="w3-row-padding w3-padding-64 w3-container w3-margin-top">
+            
+        </div>
+        <div id="add-card-form" class="w3-modal" style="display:block">
+            <div class="w3-modal-content w3-animate-zoom">
+                <div class="w3-container w3-white w3-center">
+                    <input type="button" class="w3-display-topright w3-button w3-hover-red w3-hover-text-white w3-text-red w3-large" id="hide-flash-btn" value="&times;"/>
+                    <h2 class="w3-wide">Add Card</h2><hr/>
+                    <input type="text" id="term-txt" class="w3-input w3-margin-bottom" placeholder="Term..."/><br/>
+                    <textarea placeholder="Meaning..." id="meaning-txt" class="w3-input w3-margin-bottom"></textarea><br/>
+                    <input type="button" class="w3-button w3-pink w3-margin-bottom" value="Save" id="save-flash-btn"/>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
